@@ -24,3 +24,7 @@ These 3 ranges control each an array of leds.
 
 Sample output of the leds reacting to pc sound on realtime here https://www.youtube.com/watch?v=kNa1CGnWyTQ.
 
+# Author
+
+By: Johan Porras (JohanpG)
+
