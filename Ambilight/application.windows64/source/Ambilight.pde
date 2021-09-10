@@ -16,8 +16,8 @@ import processing.serial.*;
 
 
 //-------Set Resolution Here-----//
-int resX = 1360;
-int resY = 768;
+int resX = 2560;
+int resY = 1440;
 //-------------------------------//
 
 int sectW = resX / 10;  //Section Width for the 10 sections
@@ -29,7 +29,7 @@ Robot GrabRGBval;
 
 void setup()
 {
-  port = new Serial(this, Serial.list()[0], 9600);
+  port = new Serial(this, Serial.list()[2], 9600);
   //Serial.list()[#], # = usb device number
  
   try
@@ -107,4 +107,3 @@ bA[LED] = b;
   rect((cOne - 1)*20, 0, cOne*20, 200);
 }
 }
-

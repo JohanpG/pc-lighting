@@ -16,8 +16,8 @@ import processing.serial.*;
 
 
 //-------Set Resolution Here-----//
-int resX = 1360;
-int resY = 768;
+int resX = 2560;
+int resY = 1440;
 //-------------------------------//
 
 int sectW = resX / 10;  //Section Width for the 10 sections
@@ -29,7 +29,7 @@ Robot GrabRGBval;
 
 void setup()
 {
-  port = new Serial(this, Serial.list()[1], 9600);
+  port = new Serial(this, Serial.list()[2], 9600);
   //Serial.list()[#], # = usb device number
  
   try
@@ -90,7 +90,7 @@ bA[LED] = b;
 
 }
 
-   port.write(0x3e); //write marker, arduino is looking for this
+   port.write(0xff); //write marker, arduino is looking for this
    for (int Br = 1; Br < 11; Br++){
    port.write((byte)(rA[Br]));
    port.write((byte)(gA[Br]));
